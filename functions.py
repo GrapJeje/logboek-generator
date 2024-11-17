@@ -8,6 +8,7 @@
     """
 def heading(info, border_char='-', width=30):
     border_line = border_char * width
+    
     print(border_line)
     print(info.center(width))
     print(border_line)
