@@ -50,7 +50,7 @@ classNmr = input("Vul hier jouw klas in: ")
 heading("Voorblad informatie")
 
 # Add a title
-title = document.add_paragraph(input("Vul hier een titel in: "), style="Title")
+title = document.add_paragraph(docName, style="Title")
 
 # Add the subject
 subtitle = document.add_paragraph(input("Vul hier in voor welk vak het is: "), style="Subtitle")
@@ -63,7 +63,7 @@ else:
     author_date.add_run(f"Auteurs: {formattedNames}\n")
 
 # Add the date
-author_date.add_run(f"Datum: {input('Vul hier de datum in: ')}")
+author_date.add_run(f"Datum: {input('Vul hier de datum in: ')}\n")
 
 # Add the class number
 author_date.add_run(f"Klas: {classNmr}")
@@ -131,7 +131,7 @@ while True:
         addTableContent(table, startTime, endTime, description, details)
 
         # Ask if the user want to add more days
-        more = input("Wil je nog een activiteit toevoegen voor deze dag? (ja/nee): ")
+        more = input("Wil je nog een activiteit toevoegen voor deze dag? (Ja/Nee): ")
         if more.lower() != "ja":
             break
 
